@@ -8,6 +8,7 @@
 #include "AssetTypeCategories.h"
 #include "UUtilityFunctionBPLibrary.h"
 
+#define LOCTEXT_NAMESPACE "FcreatetexModule"
 UCustomArrayAssetFactory::UCustomArrayAssetFactory(const FObjectInitializer& ObjectInitializer):Super(ObjectInitializer)
 {
 	bCreateNew = true;
@@ -63,3 +64,5 @@ UObject* UCustomArrayAssetFactory::FactoryCreateNew(UClass* Class, UObject* InPa
 
 	return PseudoComputeTexture;
 }
+
+#undef LOCTEXT_NAMESPACE
